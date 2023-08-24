@@ -30,7 +30,8 @@ public class ChildrenSum_Property {
             child += root . right . data;
         }
 
-        if (child < root . data) {
+        if(child >= root.data ) root.data = child;
+        else  {
             if (root . left!=null) root . left . data = root . data;
             else if (root . right!=null) root . right . data = root . data;
         }
